@@ -5,6 +5,7 @@ html, body {
   color: #333;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
+  -webkit-text-size-adjust: 200%;
 }
 
 div.cv {
@@ -23,6 +24,12 @@ div.cv {
     margin: 0 auto;
     padding: 0;
     box-shadow: none;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  div.cv {
+    margin: 0;
   }
 }
 
