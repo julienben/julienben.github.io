@@ -37,6 +37,12 @@ div.cv {
   box-sizing: border-box;
 }
 
+a, a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
 div.name {
   font-size: 35px;
   color: #1E88E5;
@@ -177,12 +183,6 @@ div.typography li::before {
   height: 5px;
   top: 7px;
   left: 0;
-}
-
-div.typography a, div.typography a:visited {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
 }
 
 div.separator {
