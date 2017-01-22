@@ -74,7 +74,7 @@ div.contact > div:first-of-type {
   flex-basis: 40%;
 }
 div.contact > div:nth-of-type(2) {
-  flex-basis: 32%;
+  flex-basis: 30%;
 }
 div.contact > div:last-of-type {
   flex-grow: 1;
