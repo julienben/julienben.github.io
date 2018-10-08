@@ -40,7 +40,7 @@ div.cv {
 a, a:visited {
   text-decoration: inherit;
   color: inherit;
-  cursor: auto;
+  cursor: pointer;
 }
 
 div.name {
@@ -243,12 +243,12 @@ div.hobbies div.icons {
   display: flex;
   flex-wrap: wrap;
   color: #1E88E5;
-  font-size: 35px;
+  font-size: 42px;
 }
 
 div.hobbies div.icons > i {
   flex: 0 0 33.33%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 div.hobbies div.icons > i:nth-last-child(-n + 3) {
