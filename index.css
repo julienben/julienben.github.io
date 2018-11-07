@@ -8,6 +8,10 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 div.cv {
   width: 900px;
   margin: 20px auto;
