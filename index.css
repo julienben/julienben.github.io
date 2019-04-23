@@ -47,6 +47,10 @@ a, a:visited {
   cursor: pointer;
 }
 
+div.typography a {
+  color: #1b69ae;
+}
+
 div.name {
   font-size: 35px;
   color: #1E88E5;
@@ -75,10 +79,10 @@ div.contact > div {
 }
 
 div.contact > div:first-of-type {
-  flex-basis: 40%;
+  flex-basis: 41%;
 }
 div.contact > div:nth-of-type(2) {
-  flex-basis: 30%;
+  flex-basis: 31%;
 }
 div.contact > div:last-of-type {
   flex-grow: 1;
@@ -123,8 +127,10 @@ div.main {
 div.education {
   float: right;
   background-color: #f4faff;
-  padding: 30px;
+  padding: 20px 25px;
   margin: 0 0 30px 30px;
+  transform: scale(0.95);
+  transform-origin: top right;
   /* width: 36%; */
 }
 
@@ -137,9 +143,9 @@ div.job:last-of-type {
 }
 
 div.typography div.title {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 div.typography div.title:not(:first-of-type) {
@@ -170,10 +176,14 @@ div.typography ul {
   font-family: 'Open Sans', sans-serif;
 }
 
+div.typography ul > li > ul {
+  margin: 5px 0;
+}
+
 div.typography li {
   position: relative;
   padding-left: 12px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 /* div.typography li span {
@@ -220,9 +230,9 @@ div.extra > div:last-child {
 } */
 
 div.tools .title, div.languages .title, div.hobbies .title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 div.tools ul, div.languages ul {
