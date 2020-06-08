@@ -60,28 +60,25 @@ div.description {
 }
 
 div.contact {
-  display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
-  /* justify-content: space-between; */
-  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+div.contact > div:nth-child(3n+1) {  
+  justify-self: start;
+}
+div.contact > div:nth-child(3n+2) {  
+  justify-self: center;
+}
+div.contact > div:nth-child(3n) {  
+  justify-self: end;
 }
 
 div.contact > div {
-  /* flex-basis: 50%; */
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-div.contact > div:first-of-type {
-  flex-basis: 40%;
-}
-div.contact > div:nth-of-type(2) {
-  flex-basis: 30%;
-}
-div.contact > div:last-of-type {
-  flex-grow: 1;
 }
 
 div.contact div.icon {
@@ -93,37 +90,38 @@ div.contact div.icon {
 }
 
 div.quote {
-  margin-top: 20px;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  padding: 20px 30px;
-  font-size: 22px;
   display: flex;
   align-items: center;
+  font-size: 20px;
+  padding: 20px 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 div.quote > div:first-child {
   color: #1E88E5;
   border: 1px solid #1E88E5;
   border-radius: 50%;
-  font-size: 44px;
+  font-size: 40px;
   margin-right: 20px;
-  flex: 0 0 70px;
-  height: 70px;
+  flex: 0 0 65px;
+  height: 65px;
   display: inline-flex;
   justify-content: center;
   align-items:  center;
 }
 
-div.main {}
+/* div.main {} */
 
 div.education {
   float: right;
   background-color: #f4faff;
-  padding: 30px;
+  padding: 20px 25px;
   margin: 0 0 30px 30px;
-  /* width: 36%; */
+  transform: scale(0.98);
+  transform-origin: top right;
 }
 
 div.job {
@@ -135,9 +133,9 @@ div.job:last-of-type {
 }
 
 div.typography div.title {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 div.typography div.title:not(:first-of-type) {
@@ -171,7 +169,8 @@ div.typography ul {
 div.typography li {
   position: relative;
   padding-left: 12px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  line-height: 20px;
 }
 
 /* div.typography li span {
@@ -219,9 +218,9 @@ div.extra > div:last-child {
 } */
 
 div.tools .title, div.languages .title, div.hobbies .title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 div.tools ul, div.languages ul {
@@ -233,9 +232,13 @@ div.tools ul, div.languages ul {
 
 div.tools li, div.languages li {
   color: #666;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
+}
+
+div.tools li:last-of-type, div.languages li:last-of-type {
+  margin-bottom: 0;
 }
 
 div.tools i, div.languages i {
